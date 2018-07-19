@@ -1,6 +1,9 @@
 # Gabi's Reagent Companion
 
-This is an app designed for people using reagent drug testing kits at home, and for those wondering what testing kit(s) they should be using. This will hopefully allow users to interact with the results of their tests in a less obtuse and more interactive way.
+This is an app designed for people using reagent drug testing kits at home, and for those wondering what testing kit(s) they should be using. This will hopefully allow users to interact with the results of their tests in a less obtuse and more ubiquitous, 2018 way.
+
+The app will take in data from ![reagent test chart](https://www.reagent-tests.uk/wp/wp-content/uploads/2015/12/Raw-reagent-table.jpg) and compile the relevant results in the `/results`. I'm guessing what will happen there is an array of the relevant compound reactions from selected testing kits that will iterate thru, rendering the `result` component with the right info.
+
 
 ## Getting Started
 
