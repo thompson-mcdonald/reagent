@@ -5,6 +5,7 @@ import Start from './Start';
 import Form from './Form';
 import Results from './Results';
 import Nav from './components/Nav';
+import reactions from './data.json';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 class App extends Component {

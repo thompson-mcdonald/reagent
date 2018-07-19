@@ -1,0 +1,238 @@
+{
+  "drugs": {
+    "2cb": {
+      "reactions": {
+        "marquis": "yellow green",
+        "liebermann": "dark green",
+        "froehde": "yellow",
+        "mandelin": "green",
+        "mecke": "yellow"
+        }
+    },
+    "3meopcp": {
+      "reactions": {
+        "marquis": "no reaction",
+        "liebermann": "red brown",
+        "froehde": "no reaction",
+        "mandelin": "green brown",
+        "mecke": "yellow"
+        }
+    },
+    "4fa": {
+      "reactions": {
+        "marquis": "no reaction",
+        "liebermann": "red orange",
+        "froehde": "faint purple blue",
+        "mandelin": "pale blue",
+        "mecke": "no reaction"
+        }
+    },
+    "amphetamine": {
+      "reactions": {
+        "marquis": "red yellow brown",
+        "liebermann": "orange",
+        "froehde": "no reaction",
+        "mandelin": "green brown",
+        "mecke": "no reaction"
+        }
+    },
+    "benzocaine": {
+      "reactions": {
+        "marquis": "no reaction",
+        "liebermann": "no reaction",
+        "froehde": "no reaction",
+        "mandelin": "green brown",
+        "mecke": "no reaction"
+        }
+    },
+    "ethylone": {
+      "reactions": {
+        "marquis": "bright yellow",
+        "liebermann": "green brown",
+        "froehde": "yellow green",
+        "mandelin": "brown",
+        "mecke": "bright yellow"
+        }
+    },
+    "cocaine": {
+      "reactions": {
+        "marquis": "no reaction",
+        "liebermann": "yellow orange",
+        "froehde": "no reaction",
+        "mandelin": "slight darkening",
+        "mecke": "no reaction"
+        }
+    },
+    "heroin": {
+      "reactions": {
+        "marquis": "violet red purple",
+        "liebermann": "black",
+        "froehde": "purple red green",
+        "mandelin": "dark brown",
+        "mecke": "yellow green"
+        }
+    },
+    "ibuprofen": {
+      "reactions": {
+        "marquis": "no reaction",
+        "liebermann": "red",
+        "froehde": "no reaction",
+        "mandelin": "dark brown",
+        "mecke": "light brown"
+        }
+    },
+    "ketamine": {
+      "reactions": {
+        "marquis": "no reaction",
+        "liebermann": "light yellow",
+        "froehde": "no reaction",
+        "mandelin": "faint orange",
+        "mecke": "no reaction"
+        }
+    },
+    "levamisole": {
+      "reactions": {
+        "marquis": "no reaction",
+        "liebermann": "red orange",
+        "froehde": "no reaction",
+        "mandelin": "green brown",
+        "mecke": "no reaction"
+        }
+    },
+    "liquidlsd": {
+      "reactions": {
+        "marquis": "olive black",
+        "liebermann": "no reaction",
+        "froehde": "yellow green",
+        "mandelin": "red",
+        "mecke": "green black"
+        }
+    },
+    "mdai": {
+      "reactions": {
+        "marquis": "orange",
+        "liebermann": "green black",
+        "froehde": "green black",
+        "mandelin": "brown",
+        "mecke": "green"
+        }
+    },
+    "mda": {
+      "reactions": {
+        "marquis": "violet purple black",
+        "liebermann": "green violet",
+        "froehde": "green black",
+        "mandelin": "purple blue black",
+        "mecke": "green blue"
+        }
+    },
+    "mdma": {
+      "reactions": {
+        "marquis": "blue violet black",
+        "liebermann": "brown black",
+        "froehde": "black green brown",
+        "mandelin": "purple black blue",
+        "mecke": "green blue"
+        }
+    },
+    "mdpv": {
+      "reactions": {
+        "marquis": "bright yellow",
+        "liebermann": "yellow green",
+        "froehde": "bright yellow",
+        "mandelin": "green brown",
+        "mecke": "bright yellow"
+      }
+    },
+    "mephedrone": {
+      "reactions": {
+        "marquis": "no reaction",
+        "liebermann": "bright yellow",
+        "froehde": "no reaction",
+        "mandelin": "no reaction",
+        "mecke": "no reaction"
+      }
+    },
+    "methamphetamine": {
+      "reactions": {
+        "marquis": "red orange brown",
+        "liebermann": "red orange",
+        "froehde": "no reaction",
+        "mandelin": "green blue",
+        "mecke": "no reaction"
+      }
+    },
+    "methoxetamine": {
+      "reactions": {
+        "marquis": "pink slow",
+        "liebermann": "orange brown",
+        "froehde": "yellow green",
+        "mandelin": "no reaction",
+        "mecke": "yellow green red"
+      }
+    },
+    "modafinil": {
+      "reactions": {
+        "marquis": "yellow orange brown",
+        "liebermann": "darkening orange",
+        "froehde": "red orange",
+        "mandelin": "brown red",
+        "mecke": "orange brown"
+      }
+    },
+    "mpa": {
+      "reactions": {
+        "marquis": "dark brown",
+        "liebermann": "dark brown",
+        "froehde": "light brown",
+        "mandelin": "reddish brown",
+        "mecke": "black"
+      }
+    },
+    "paracetamol": {
+      "reactions": {
+        "marquis": "no reaction",
+        "liebermann": "brown purple",
+        "froehde": "pale blue",
+        "mandelin": "moderate olive",
+        "mecke": "no reaction"
+      }
+    },
+    "pmma": {
+      "reactions": {
+        "marquis": "no reaction",
+        "liebermann": "purple brown orange",
+        "froehde": "pale green red brown",
+        "mandelin": "rust",
+        "mecke": "olive green"
+      }
+    },
+    "pma": {
+      "reactions": {
+        "marquis": "no reaction",
+        "liebermann": "purple brown orange",
+        "froehde": "pale green red brown",
+        "mandelin": "rust",
+        "mecke": "olive green"
+      }
+    },
+    "procaine": {
+      "reactions": {
+        "marquis": "no reaction",
+        "liebermann": "no reaction",
+        "froehde": "no reaction",
+        "mandelin": "deep orange",
+        "mecke": "very light yellow"
+      }
+    },
+    "vitamin c": {
+      "reactions": {
+        "marquis": "very light yellow",
+        "liebermann": "brown purple black",
+        "froehde": "pale yellow",
+        "mandelin": "pale blue",
+        "mecke": "orange slow"
+      }
+    }
+  }
+}
