@@ -40,9 +40,9 @@ I'm not dead set on this so if you have any ideas on how better to store this, f
 
 ## Stuff to be done still
 
-- [ x ] Front-end components
+- [x] Front-end components
 - [ ] Routing of app
-- [ x ] Mass Data Entry
+- [x] Mass Data Entry
 - [ ] Logic for results
 - [ ] Testing
 - [ ] Tighten up copy
