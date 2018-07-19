@@ -20,11 +20,29 @@ and
 
 concurrently
 
+## The Data
+
+All the data from the above chart is in data.json which you'll find in the src folder. It is currently stored like this:
+
+```
+"ibuprofen": {
+  "reactions": {
+    "marquis": "no reaction",
+    "liebermann": "red",
+    "froehde": "no reaction",
+    "mandelin": "dark brown",
+    "mecke": "light brown"
+    }
+}
+```
+
+I'm not dead set on this so if you have any ideas on how better to store this, feel free to open an issue.
+
 ## Stuff to be done still
 
-- [ ] Front-end components
+- [ x ] Front-end components
 - [ ] Routing of app
-- [ ] Mass Data Entry
+- [ x ] Mass Data Entry
 - [ ] Logic for results
 - [ ] Testing
 - [ ] Tighten up copy
