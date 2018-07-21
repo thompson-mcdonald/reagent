@@ -14,8 +14,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header/>
-        <div class="container bg-white bo-top pad-v pad-h">
-          <div class='d-b'>
+        <div className="container bg-white bo-top pad-v pad-h">
+          <div className='d-b'>
             <Router>
               <Switch>
                 <Route exact path="/" component={Start}/>

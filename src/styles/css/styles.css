@@ -198,10 +198,14 @@ a:visited {
   padding: 25px 29px;
   border: 1px solid #eee;
   border-radius: 5px;
-  font-size: 16px; }
-  @media (min-width: 600px) {
-    .scb-checkbox + label {
-      font-size: 20px; } }
+  font-size: 16px; 
+  text-transform: capitalize;
+}
+@media (min-width: 600px) {
+  .scb-checkbox + label {
+    font-size: 20px; 
+  } 
+}
 
 .scb-checkbox:checked + label {
   background: #ECF0F2; }

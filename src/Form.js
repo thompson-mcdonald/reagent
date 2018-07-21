@@ -1,18 +1,38 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Autocomplete from 'react-autocomplete';
+import ReagentCheckbox from './ReagentCheckbox'
 
 class Form extends Component {
   constructor(props) {
     super(props);
-    this.state = {value: ''};
+
+    this.state = {
+      drug: '',
+      reagents: {
+        marquis: false,
+        mecke: false,
+        liebermann: false,
+        madelin: false,
+        froehde: false,
+      }
+    };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
-    this.setState({value: event.target.value});
+    let target = event.target;
+    var newState = Object.assign({}, this.state, {})
+
+    if (target.type == 'checkbox'){
+      newState[target.value] = target.checked
+    }else{
+      newState['drug'] = target.value
+    }
+
+    this.setState(newState)
   }
 
   handleSubmit(event) {
@@ -25,34 +45,17 @@ class Form extends Component {
         <form onSubmit={this.handleSubmit}>
           <label className='form-label'>
             <span className='question'>Start by entering what you're going to test:</span>
-            <input type="text" placeholder="Eg: MDMA" value={this.state.value} className='field' onChange={this.handleChange} />
+            <input type="text" placeholder="Eg: MDMA" value={this.state.drug} className='field' onChange={this.handleChange} />
           </label>
           <span className='question'>Select some testing kits:</span>
           <div className='form-label scb-wrapper'>
-            <div className='scb-option'>
-              <input className='scb-checkbox' id="marquis" type="checkbox" value="marquis" />
-              <label for='marquis'>Marquis</label>
-            </div>
-            <div className='scb-option'>
-              <input className='scb-checkbox' id="mecke" type="checkbox" value="mecke" />
-              <label for='mecke'>Mecke</label>
-            </div>
-            <div className='scb-option'>
-              <input className='scb-checkbox' id="liebermann" type="checkbox" value="liebermann" />
-              <label for='liebermann'>Liebermann</label>
-            </div>
-            <div className='scb-option'>
-              <input className='scb-checkbox' id="mandelin" type="checkbox" value="mandelin" />
-              <label for='mandelin'>Mandelin</label>
-            </div>
-            <div className='scb-option'>
-              <input className='scb-checkbox' id="froehde" type="checkbox" value="froehde" />
-              <label for='froehde'>Froehde</label>
-            </div>
+            { Object.keys(this.state.reagents).map((reagent, i) => (
+              <ReagentCheckbox reagent={reagent} handleChange={this.handleChange} />
+            ))}
           </div>
-          <Link to="/results" className="btn-cta">
+          <a className='btn-cta'>
             <span><input type="submit"  value="Get results" /></span>
-          </Link>
+          </a>
 
         </form>
       </div>
