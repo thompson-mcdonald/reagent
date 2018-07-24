@@ -8,7 +8,6 @@ function DrugReaction(props) {
       <p> Reagent: {props.reagent} </p>
       <p> Reaction: {props.reaction} </p>
     </div>
-
   )
 }
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route, Redirect } from "react-router-dom";
 import Autocomplete from 'react-autocomplete';
 import Results from './Results'
-import FormContainer from './FormContainer'
+import ReagentCheckbox from './ReagentCheckbox'
 
 class Form extends Component {
   constructor(props) {
@@ -29,7 +29,7 @@ class Form extends Component {
     var newState = Object.assign({}, this.state, {})
 
     if (target.type == 'checkbox'){
-      newState[target.value] = target.checked
+      newState.reagents[target.value] = target.checked
     }else{
       newState['drug'] = target.value
     }
@@ -39,16 +39,32 @@ class Form extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    this.props.history.push('/results')
+    let reagents = Object.keys(this.state.reagents).filter( r => this.state.reagents[r] );
+    let reagentParams = '/r/' + reagents.join(',');
+    let drugParams = '/d/' + this.state.drug;
+    this.props.history.push('/results' + drugParams + reagentParams)
   }
 
   render() {
     return (
-      <FormContainer 
-        drug={this.state.drug}
-        reagents={this.state.reagents}
-        handleSubmit={this.handleSubmit} 
-        handleChange={this.handleChange} /> 
+      <div className="App form-wrapper">
+        <form onSubmit={this.handleSubmit}>
+          <label className='form-label'>
+            <span className='question'>Start by entering what you're going to test:</span>
+            <input type="text" placeholder="Eg: MDMA" value={this.state.drug} className='field' onChange={this.handleChange} />
+          </label>
+          <span className='question'>Select some testing kits:</span>
+          <div className='form-label scb-wrapper'>
+            { Object.keys(this.state.reagents).map((reagent, i) => (
+              <ReagentCheckbox reagent={reagent} handleChange={this.handleChange} />
+            ))}
+          </div>
+          <a className='btn-cta'>
+            <span><input type="submit"  value="Get results" /></span>
+          </a>
+
+        </form>
+      </div>
     );
   }
 }
