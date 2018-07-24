@@ -20,7 +20,7 @@ class App extends Component {
               <Switch>
                 <Route exact path="/" component={Start}/>
                 <Route path="/form" component={Form}/>
-                <Route path="/results" component={Results}/>
+                <Route path="/results/d/:drugs/r/:reagents" component={Results}/>
               </Switch>
             </Router>
             <div className='clear'></div>

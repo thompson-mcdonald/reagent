@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Route, Redirect } from "react-router-dom";
 import Autocomplete from 'react-autocomplete';
-import ReagentCheckbox from './ReagentCheckbox'
+import Results from './Results'
+import FormContainer from './FormContainer'
 
 class Form extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
+      showResults: false,
       drug: '',
       reagents: {
         marquis: false,
@@ -37,28 +39,16 @@ class Form extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
+    this.props.history.push('/results')
   }
 
   render() {
     return (
-      <div className="App form-wrapper">
-        <form onSubmit={this.handleSubmit}>
-          <label className='form-label'>
-            <span className='question'>Start by entering what you're going to test:</span>
-            <input type="text" placeholder="Eg: MDMA" value={this.state.drug} className='field' onChange={this.handleChange} />
-          </label>
-          <span className='question'>Select some testing kits:</span>
-          <div className='form-label scb-wrapper'>
-            { Object.keys(this.state.reagents).map((reagent, i) => (
-              <ReagentCheckbox reagent={reagent} handleChange={this.handleChange} />
-            ))}
-          </div>
-          <a className='btn-cta'>
-            <span><input type="submit"  value="Get results" /></span>
-          </a>
-
-        </form>
-      </div>
+      <FormContainer 
+        drug={this.state.drug}
+        reagents={this.state.reagents}
+        handleSubmit={this.handleSubmit} 
+        handleChange={this.handleChange} /> 
     );
   }
 }
