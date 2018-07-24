@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 
-const Nav = () => (
+export default () => (
   <div>
     <main className="nav-wrapper d-n">
       <Header />
@@ -9,5 +9,3 @@ const Nav = () => (
     </main>
   </div>
 );
-
-export default Nav;

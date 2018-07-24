@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { Route, Redirect } from "react-router-dom";
 import Select from "react-select";
-import Results from "./Results";
 import ReagentCheckbox from "./ReagentCheckbox";
 import data from "./data.json";
 
@@ -31,11 +29,11 @@ class Form extends Component {
   }
 
   handleChange(event) {
-    let target = event.target;
+    const { target } = event;
 
-    var newState = Object.assign({}, this.state, {});
+    const newState = { ...this.state };
 
-    if (target && target.type == "checkbox") {
+    if (target && target.type === "checkbox") {
       newState.reagents[target.value] = target.checked;
     } else {
       newState.drugs = event.map(e => e.value);
@@ -46,21 +44,26 @@ class Form extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    let reagents = Object.keys(this.state.reagents).filter(
-      r => this.state.reagents[r]
-    );
-    let reagentParams = "/r/" + reagents.join(",");
-    let drugParams = "/d/" + this.state.drugs.join(",");
-    this.props.history.push("/results" + drugParams + reagentParams);
+
+    const { reagents, drugs } = this.state;
+
+    const formattedReagents = Object.keys(reagents).filter(r => reagents[r]);
+
+    const reagentParams = `/r/${formattedReagents.join(",")}`;
+    const drugParams = `/d/${drugs.join(",")}`;
+
+    this.props.history.push(`/results${drugParams}${reagentParams}`);
   }
 
   render() {
+    const { reagents } = this.state;
+
     return (
       <div className="App form-wrapper">
         <form onSubmit={this.handleSubmit}>
           <label className="form-label">
             <span className="question">
-              Start by entering what you're going to test:
+              Start by entering what you&apos;re going to test:
             </span>
             <Select
               options={selectOptions}
@@ -70,7 +73,7 @@ class Form extends Component {
           </label>
           <span className="question">Select some testing kits:</span>
           <div className="form-label scb-wrapper">
-            {Object.keys(this.state.reagents).map((reagent, i) => (
+            {Object.keys(reagents).map((reagent) => (
               <ReagentCheckbox
                 reagent={reagent}
                 handleChange={this.handleChange}

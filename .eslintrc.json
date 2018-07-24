@@ -1,5 +1,9 @@
 {
   "extends": ["airbnb", "prettier"],
+  "rules": {
+    "react/jsx-one-expression-per-line": "off",
+    "react/prop-types": "off"
+  },
   "env": {
     "browser": true,
     "node": true
