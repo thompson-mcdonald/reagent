@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
 import { Route, Redirect } from "react-router-dom";
-import Autocomplete from 'react-autocomplete';
-import Results from './Results'
-import ReagentCheckbox from './ReagentCheckbox'
+import Select from 'react-select';
+import Results from './Results';
+import ReagentCheckbox from './ReagentCheckbox';
+import data from './data.json';
+
+const selectOptions = Object.keys(data.drugs).map( drug => ({ value: drug, label: drug }));
 
 class Form extends Component {
+
   constructor(props) {
     super(props);
 
     this.state = {
       showResults: false,
-      drug: '',
+      drugs: [],
       reagents: {
         marquis: false,
         mecke: false,
@@ -26,12 +30,13 @@ class Form extends Component {
 
   handleChange(event) {
     let target = event.target;
+
     var newState = Object.assign({}, this.state, {})
 
-    if (target.type == 'checkbox'){
+    if (target && target.type == 'checkbox'){
       newState.reagents[target.value] = target.checked
     }else{
-      newState['drug'] = target.value
+      newState.drugs = event.map(e => e.value);
     }
 
     this.setState(newState)
@@ -41,7 +46,7 @@ class Form extends Component {
     event.preventDefault();
     let reagents = Object.keys(this.state.reagents).filter( r => this.state.reagents[r] );
     let reagentParams = '/r/' + reagents.join(',');
-    let drugParams = '/d/' + this.state.drug;
+    let drugParams = '/d/' + this.state.drugs.join(',');
     this.props.history.push('/results' + drugParams + reagentParams)
   }
 
@@ -51,7 +56,7 @@ class Form extends Component {
         <form onSubmit={this.handleSubmit}>
           <label className='form-label'>
             <span className='question'>Start by entering what you're going to test:</span>
-            <input type="text" placeholder="Eg: MDMA" value={this.state.drug} className='field' onChange={this.handleChange} />
+            <Select options={selectOptions} onChange={this.handleChange} isMulti/>
           </label>
           <span className='question'>Select some testing kits:</span>
           <div className='form-label scb-wrapper'>
