@@ -9,6 +9,7 @@ const Option = styled.label`
   align-items: center;
   text-align: right;
   text-transform: capitalize;
+  font-size: 20px;
   &:hover {
     cursor: pointer;
   }
@@ -22,7 +23,7 @@ const Checkbox = styled.input.attrs({
   margin-left: auto;
   -webkit-appearance: none;
   border-radius: 50%;
-
+  cursor: pointer;
 
   &:before {
    content: '';
@@ -42,7 +43,8 @@ const Checkbox = styled.input.attrs({
  }
  &:disabled:before {
    background: white;
-  border: 3px solid #ECF0F2;
+   border: 3px solid #ECF0F2;
+   color: #eee;
  }
  &:focus {
    outline: none;
