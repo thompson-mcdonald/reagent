@@ -1,13 +1,30 @@
 import React, { Component } from "react";
 import Select from "react-select";
-import ReagentCheckbox from "../components/ReagentCheckbox";
-import Button from "../components/Button/Button";
-import data from "../data/drugs.json";
+import styled from "styled-components";
+import ReagentCheckbox from "../../components/ReagentCheckbox/ReagentCheckbox";
+import Button from "../../components/Button/Button";
+import data from "../../data/drugs.json";
 
 const selectOptions = Object.keys(data.drugs).map(drug => ({
   value: drug,
   label: drug
 }));
+
+const FormLabel = styled.label`
+  margin-bottom: 40px;
+  display: block;
+`;
+
+const Question = styled.div`
+  font-size: 20px;
+  margin-bottom: 1rem;
+`;
+
+const ReagentOptions = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+`;
 
 class Form extends Component {
   constructor(props) {
@@ -60,32 +77,32 @@ class Form extends Component {
     const { reagents } = this.state;
 
     return (
-      <div className="App form-wrapper">
-        <form onSubmit={this.handleSubmit}>
-          <label className="form-label">
-            <span className="question">
-              Start by entering what you&apos;re going to test:
-            </span>
-            <Select
-              options={selectOptions}
-              onChange={this.handleChange}
-              isMulti
-            />
-          </label>
-          <span className="question">Select some testing kits:</span>
-          <div className="form-label scb-wrapper">
+      <form onSubmit={this.handleSubmit}>
+        <FormLabel>
+          <Question>Start by entering what you&apos;re going to test:</Question>
+          <Select
+            options={selectOptions}
+            onChange={this.handleChange}
+            isMulti
+          />
+        </FormLabel>
+
+        <FormLabel>
+          <Question>Select some testing kits:</Question>
+          <ReagentOptions>
             {Object.keys(reagents).map(reagent => (
               <ReagentCheckbox
                 reagent={reagent}
                 handleChange={this.handleChange}
               />
             ))}
-          </div>
-          <Button theme="cta" type="submit">
-            Get Results
-          </Button>
-        </form>
-      </div>
+          </ReagentOptions>
+        </FormLabel>
+
+        <Button theme="cta" type="submit">
+          Get Results
+        </Button>
+      </form>
     );
   }
 }
