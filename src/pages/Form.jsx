@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Select from "react-select";
-import ReagentCheckbox from "./ReagentCheckbox";
-import data from "./data.json";
+import ReagentCheckbox from "../components/ReagentCheckbox";
+import data from "../data/drugs.json";
 
 const selectOptions = Object.keys(data.drugs).map(drug => ({
   value: drug,
@@ -73,7 +73,7 @@ class Form extends Component {
           </label>
           <span className="question">Select some testing kits:</span>
           <div className="form-label scb-wrapper">
-            {Object.keys(reagents).map((reagent) => (
+            {Object.keys(reagents).map(reagent => (
               <ReagentCheckbox
                 reagent={reagent}
                 handleChange={this.handleChange}

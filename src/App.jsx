@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Start from "./Start";
-import Form from "./Form";
-import Results from "./Results";
+import Start from "./pages/Start";
+import Form from "./pages/Form";
+import Results from "./pages/Results";
 import Nav from "./components/Nav";
 
 export default () => (
