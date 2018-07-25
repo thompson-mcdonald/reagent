@@ -7,18 +7,11 @@ The app will take in data from ![reagent test chart](https://www.reagent-tests.u
 
 ## Getting Started
 
-Clone the repo; have npm/yarn installed; download necessary packages
-
-THEN; because I'm very silly you'll need to run
-
-` yarn start `
-
-and
-
-` yarn sass `
-
-
-concurrently
+1. Clone repo
+1. `npm install`
+1. `npm run start`
+1. ???
+1. Profit
 
 ## The Data
 

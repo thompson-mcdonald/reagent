@@ -1,26 +1,25 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Start from "./pages/Start";
-import Form from "./pages/Form";
-import Results from "./pages/Results";
-import Nav from "./components/Nav";
+import Header from "./components/Header/Header";
+import Wrapper from "./components/Wrapper/Wrapper";
+import Start from "./pages/Start/Start";
+import Form from "./pages/Form/Form";
+import Results from "./pages/Results/Results";
+import "./variables.css";
+import "./App.css";
 
 export default () => (
-  <div className="App">
-    <Header />
-    <div className="container bg-white bo-top pad-v pad-h">
-      <div className="d-b">
-        <Router>
-          <Switch>
-            <Route exact path="/" component={Start} />
-            <Route path="/form" component={Form} />
-            <Route path="/results/d/:drugs/r/:reagents" component={Results} />
-          </Switch>
-        </Router>
-        <div className="clear" />
-      </div>
-    </div>
-    <Nav />
-  </div>
+  <Router>
+    <Fragment>
+      <Header />
+
+      <Wrapper>
+        <Switch>
+          <Route exact path="/" component={Start} />
+          <Route path="/form" component={Form} />
+          <Route path="/results/d/:drugs/r/:reagents" component={Results} />
+        </Switch>
+      </Wrapper>
+    </Fragment>
+  </Router>
 );

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import data from "../data/drugs.json";
-import DrugReactions from "../components/DrugReactions";
+import DrugReactions from "../../components/DrugReactions/DrugReactions";
+import data from "../../data/drugs.json";
 
 class Results extends Component {
   constructor(props) {
