@@ -2,7 +2,8 @@
   "extends": ["airbnb", "prettier"],
   "rules": {
     "react/jsx-one-expression-per-line": "off",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "react/destructuring-assignment": "off"
   },
   "env": {
     "browser": true,

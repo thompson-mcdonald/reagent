@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import data from "./data.json";
-import DrugReactions from "./DrugReactions";
+import data from "../data/drugs.json";
+import DrugReactions from "../components/DrugReactions";
 
 class Results extends Component {
   constructor(props) {
@@ -13,14 +13,19 @@ class Results extends Component {
   }
 
   componentWillMount() {
-    const { drugs: paramsDrugs, reagents: paramsReagents } = this.props.match.params;
+    const {
+      drugs: paramsDrugs,
+      reagents: paramsReagents
+    } = this.props.match.params;
 
     const drugNames = paramsDrugs.split(",");
     const reagents = paramsReagents.split(",");
 
     const drugs = {};
 
-    drugNames.forEach(drug => { drugs[drug] = data.drugs[drug] });
+    drugNames.forEach(drug => {
+      drugs[drug] = data.drugs[drug];
+    });
 
     this.setState({ drugs, reagents });
   }
@@ -31,7 +36,7 @@ class Results extends Component {
     return (
       <div>
         <p>Ok here&apos;s what to look for</p>
-        {Object.keys(drugs).map((drug) => (
+        {Object.keys(drugs).map(drug => (
           <DrugReactions
             drug={drug}
             reactions={drugs[drug].reactions}

@@ -11,9 +11,7 @@ export default () => (
         </a>
       </div>
       <div className="g-h-right ta-r">
-        <a href="#">
-          MENU
-        </a>
+        <a href="#">MENU</a>
       </div>
     </div>
   </header>
