@@ -15,6 +15,12 @@ const FormLabel = styled.label`
   display: block;
 `;
 
+const Qwrapper = styled.div`
+  margin-bottom: 40px;
+  display: block;
+`;
+
+
 const Question = styled.div`
   font-size: 20px;
   margin-bottom: 1rem;
@@ -37,7 +43,7 @@ class Form extends Component {
         marquis: false,
         mecke: false,
         liebermann: false,
-        madelin: false,
+        mandelin: false,
         froehde: false
       }
     };
@@ -87,7 +93,7 @@ class Form extends Component {
           />
         </FormLabel>
 
-        <FormLabel>
+        <Qwrapper>
           <Question>Select some testing kits:</Question>
           <ReagentOptions>
             {Object.keys(reagents).map(reagent => (
@@ -97,7 +103,7 @@ class Form extends Component {
               />
             ))}
           </ReagentOptions>
-        </FormLabel>
+        </Qwrapper>
 
         <Button theme="cta" type="submit">
           Get Results

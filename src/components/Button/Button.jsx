@@ -49,6 +49,8 @@ export default ({ to, theme, ...rest }) => {
 
     &:hover {
       background-color: var(--color-dark);
+      transform: translateX(10px);
+      cursor: pointer;
     }
   `;
 

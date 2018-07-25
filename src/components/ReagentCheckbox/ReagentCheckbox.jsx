@@ -7,13 +7,46 @@ const Option = styled.label`
   border: 1px solid #eee;
   border-radius: 5px;
   align-items: center;
+  text-align: right;
+  text-transform: capitalize;
+  &:hover {
+    cursor: pointer;
+  }
 `;
+
 
 const Checkbox = styled.input.attrs({
   type: "checkbox"
 })`
   background: var(--color-light-grey);
   margin-left: auto;
+  -webkit-appearance: none;
+  border-radius: 50%;
+
+
+  &:before {
+   content: '';
+   display: inline-block;
+   vertical-align: middle;
+   background: #eee;
+   width: 30px;
+   height: 30px;
+   border-radius: 200%;
+ }
+ &:checked:before {
+   content: '';
+   display: inline-block;
+   vertical-align: text-top;
+   background: #86D095;
+   border-radius: 200%;
+ }
+ &:disabled:before {
+   background: white;
+  border: 3px solid #ECF0F2;
+ }
+ &:focus {
+   outline: none;
+ }
 `;
 
 export default ({ reagent, handleChange }) => (
