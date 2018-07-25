@@ -1,10 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Button from "../components/Button/Button";
+import React, { Fragment } from "react";
+import styled from "styled-components";
+import Button from "../../components/Button/Button";
+
+const Blurb = styled.div`
+  margin-bottom: 30px;
+  width: 80%;
+  font-size: 16px;
+`;
 
 export default () => (
-  <div>
-    <div className="start content">
+  <Fragment>
+    <Blurb>
       <p>We do not recommend anybody take illegal substances.</p>
 
       <p>
@@ -18,9 +24,10 @@ export default () => (
         only test a small amount of the drug you’re consuming; know your doses
         and protect yourself
       </p>
-    </div>
+    </Blurb>
+
     <Button theme="cta" to="/form">
       OK, let's go!
     </Button>
-  </div>
+  </Fragment>
 );
