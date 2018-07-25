@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Select from "react-select";
 import ReagentCheckbox from "../components/ReagentCheckbox";
+import Button from "../components/Button/Button";
 import data from "../data/drugs.json";
 
 const selectOptions = Object.keys(data.drugs).map(drug => ({
@@ -80,11 +81,9 @@ class Form extends Component {
               />
             ))}
           </div>
-          <a className="btn-cta">
-            <span>
-              <input type="submit" value="Get results" />
-            </span>
-          </a>
+          <Button theme="cta" type="submit">
+            Get Results
+          </Button>
         </form>
       </div>
     );

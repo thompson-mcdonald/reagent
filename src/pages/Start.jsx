@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Button from "../components/Button/Button";
 
 export default () => (
   <div>
@@ -18,8 +19,8 @@ export default () => (
         and protect yourself
       </p>
     </div>
-    <Link to="/form" className="btn-cta">
-      <span>Ok, Let&apos;s go</span>
-    </Link>
+    <Button theme="cta" to="/form">
+      OK, let's go!
+    </Button>
   </div>
 );
