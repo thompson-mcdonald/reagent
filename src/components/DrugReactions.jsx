@@ -5,7 +5,7 @@ export default ({ drug, reagents, reactions }) => (
   <div>
     <h2>{drug}</h2>
 
-    {reagents.map((reagent) => (
+    {reagents.map(reagent => (
       <DrugReaction
         drug={drug}
         reagent={reagent}

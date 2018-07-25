@@ -15,10 +15,7 @@ export default () => (
           <Switch>
             <Route exact path="/" component={Start} />
             <Route path="/form" component={Form} />
-            <Route
-              path="/results/d/:drugs/r/:reagents"
-              component={Results}
-            />
+            <Route path="/results/d/:drugs/r/:reagents" component={Results} />
           </Switch>
         </Router>
         <div className="clear" />
