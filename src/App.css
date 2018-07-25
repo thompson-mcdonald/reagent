@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #F7D532;
+  background: var(--color-yellow);
   font-family: 'Karla', sans-serif;
   margin: 0;
   line-height: 1.6;

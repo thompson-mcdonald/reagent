@@ -18,7 +18,7 @@ export default ({ to, theme, ...rest }) => {
   }
 
   const Component = styled(component)`
-    color: #fff;
+    color: var(--color-white);
     font-size: 20px;
 
     display: flex;
@@ -32,7 +32,7 @@ export default ({ to, theme, ...rest }) => {
 
     text-transform: uppercase;
 
-    background-color: #492991;
+    background-color: var(--color-cta);
     clip-path: polygon(
       0% 0%,
       calc(100% - 50px) 0%,
@@ -43,12 +43,12 @@ export default ({ to, theme, ...rest }) => {
 
     &:link,
     &:visited {
-      color: #fff;
+      color: var(--color-white);
       text-decoration: none;
     }
 
     &:hover {
-      background-color: #160d2a;
+      background-color: var(--color-dark);
     }
   `;
 

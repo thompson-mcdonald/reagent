@@ -12,7 +12,7 @@ const Option = styled.label`
 const Checkbox = styled.input.attrs({
   type: "checkbox"
 })`
-  background: #ccc;
+  background: var(--color-light-grey);
   margin-left: auto;
 `;
 

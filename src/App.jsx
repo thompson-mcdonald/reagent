@@ -5,6 +5,7 @@ import Wrapper from "./components/Wrapper/Wrapper";
 import Start from "./pages/Start/Start";
 import Form from "./pages/Form/Form";
 import Results from "./pages/Results";
+import "./variables.css";
 import "./App.css";
 
 export default () => (
