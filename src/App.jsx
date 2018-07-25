@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import Wrapper from "./components/Wrapper/Wrapper";
 import Start from "./pages/Start/Start";
 import Form from "./pages/Form/Form";
-import Results from "./pages/Results";
+import Results from "./pages/Results/Results";
 import "./variables.css";
 import "./App.css";
 
