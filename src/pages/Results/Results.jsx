@@ -35,7 +35,7 @@ class Results extends Component {
 
     return (
       <div>
-        <p>Ok here&apos;s what to look for</p>
+        <p>Ok here&apos;s what to look for:</p>
         {Object.keys(drugs).map(drug => (
           <DrugReactions
             drug={drug}

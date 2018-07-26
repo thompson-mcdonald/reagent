@@ -20,10 +20,9 @@ const Qwrapper = styled.div`
   display: block;
 `;
 
-
 const Question = styled.div`
   font-size: 20px;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 `;
 
 const ReagentOptions = styled.div`
