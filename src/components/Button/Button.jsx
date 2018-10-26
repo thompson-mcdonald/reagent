@@ -24,15 +24,14 @@ export default ({ to, theme, ...rest }) => {
     display: flex;
     align-items: center;
 
-    width: 100%;
+    width: 70%;
     height: 80px;
     padding-left: 25px;
 
     transition: 0.2s ease all;
 
-    text-transform: uppercase;
-
-    background-color: var(--color-cta);
+    background-color: var(--color-blue);
+    border-radius: 5px;
     clip-path: polygon(
       0% 0%,
       calc(100% - 50px) 0%,

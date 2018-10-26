@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Button from "../../components/Button/Button";
 
 const Blurb = styled.div`
-  margin-bottom: 30px;
+  margin-bottom: 70px;
   width: 80%;
   font-size: 16px;
 `;
@@ -11,6 +11,8 @@ const Blurb = styled.div`
 export default () => (
   <Fragment>
     <Blurb>
+      <h1>Welcome</h1>
+
       <p>We do not recommend anybody take illegal substances.</p>
 
       <p>

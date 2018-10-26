@@ -20,15 +20,22 @@ const Qwrapper = styled.div`
   display: block;
 `;
 
-const Question = styled.div`
-  font-size: 20px;
+const Question = styled.h2`
   margin-bottom: 2rem;
+  margin-top: 1rem;
 `;
 
 const ReagentOptions = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
+`;
+
+const Selector = styled(Select)`
+  font-size: 20px;
+  &.Select--multi {
+    padding: 20px;
+  }
 `;
 
 class Form extends Component {
@@ -85,7 +92,7 @@ class Form extends Component {
       <form onSubmit={this.handleSubmit}>
         <FormLabel>
           <Question>Start by entering what you&apos;re going to test:</Question>
-          <Select
+          <Selector
             options={selectOptions}
             onChange={this.handleChange}
             isMulti

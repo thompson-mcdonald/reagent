@@ -6,6 +6,7 @@ import Start from "./pages/Start/Start";
 import Form from "./pages/Form/Form";
 import Results from "./pages/Results/Results";
 import "./variables.css";
+import "./reactions.css";
 import "./App.css";
 
 export default () => (

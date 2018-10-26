@@ -3,17 +3,23 @@ import styled from "styled-components";
 
 const Results = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 40px;
+  @media screen and (min-width: 750px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }`
 
 const Reaction = styled.div`
   display: inline-block;
+  background-color: #eee;
+  padding: 20px;
 }`
 
 const DrugHeader = styled.h2`
   text-transform: uppercase;
-  padding: 20px 0;
+  padding: 0 0 20px;
+  font-weight: normal;
 }`
 
 const DrugGroup = styled.div`
@@ -26,7 +32,7 @@ const ReagentLabel = styled.div`
   overflow: hidden;
   user-select: all;
   text-align: right;
-  font-weight: bold;
+  font-weight: normal;
   text-transform: uppercase;
   &:before {
     content: 'reagent';
@@ -42,7 +48,7 @@ const DrugLabel = styled.div`
   width: 50%;
   overflow: hidden;
   user-select: all;
-  font-weight: bold;
+  font-weight: normal;
   text-transform: uppercase;
   &:before {
     content: 'drug';
@@ -57,8 +63,9 @@ const ReactionColor = styled.div`
   width: 100%;
   display: block;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 5px;
   text-transform: uppercase;
+  border-radius: 4px;
 }`
 
 const reactionFor = ({ drug, reagent, reaction }) => (
@@ -67,7 +74,7 @@ const reactionFor = ({ drug, reagent, reaction }) => (
       <DrugLabel>{drug}</DrugLabel>
       <ReagentLabel>{reagent}</ReagentLabel>
     </div>
-    <ReactionColor className={`reaction-bg ${reaction}`}>{reaction}</ReactionColor>
+    <ReactionColor className={`reaction-bg ${reagent}-${drug}`}>{reaction}</ReactionColor>
   </Reaction>
 );
 

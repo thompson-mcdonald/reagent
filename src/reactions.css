@@ -1,0 +1,153 @@
+.marquis-2cb { background-color: var(--r-yellow-green); }
+.mecke-2cb { background-color: var(--r-yellow); }
+.liebermann-2cb { background-color: var(--r-dark-green); color: var(--color-white); }
+.mandelin-2cb { background: var(--r-green); color: var(--color-white); }
+.froehde-2cb { background: var(--r-yellow); }
+
+.marquis-3meopcp { background: var(--r-no-reaction);  }
+.mecke-3meopcp { background: var(--r-yellow); }
+.liebermann-3meopcp { background: var(--r-reddish-brown); color: white; }
+.mandelin-3meopcp { background: var(--r-green-brown); color: white; }
+.froehde-3meopcp { background: var(--r-no-reaction);  }
+
+.marquis-4fa { background: var(--r-no-reaction);  }
+.mecke-4fa{ background: var(--r-no-reaction);  }
+.liebermann-4fa { background: var(--r-reddish-orange); color: white; }
+.mandelin-4fa { background: var(--r-pale-blue); }
+.froehde-4fa { background: var(--r-faint-purple); }
+
+.marquis-amphetamine { background: var(--r-red-yellow-brown); color: white; }
+.mecke-amphetamine { background: var(--r-no-reaction);  }
+.liebermann-amphetamine { background: var(--r-orange); color: white; }
+.mandelin-amphetamine { background: var(--r-green-brown); color: white; }
+.froehde-amphetamine { background: var(--r-no-reaction);  }
+
+.marquis-benzocaine { background: var(--r-no-reaction);  }
+.mecke-benzocaine { background: var(--r-no-reaction);  }
+.liebermann-benzocaine { background: var(--r-no-reaction);  }
+.mandelin-benzocaine { background: var(--r-green-brown); color: white; }
+.froehde-benzocaine { background: var(--r-no-reaction);  }
+
+.marquis-ethylone { background: var(--r-bright-yellow); }
+.mecke-ethylone { background: var(--r-bright-yellow); }
+.liebermann-ethylone { background: var(--r-green-brown); color: white; }
+.mandelin-ethylone { background: var(--r-brown); color: white; }
+.froehde-ethylone { background: var(--r-yellow-green); }
+
+.marquis-cocaine { background: var(--r-no-reaction);  }
+.mecke-cocaine { background: var(--r-no-reaction);  }
+.liebermann-cocaine { background: var(--r-yellowish-orange); color: white; }
+.mandelin-cocaine { background: var(--r-brown); color: white; }
+.froehde-cocaine { background: var(--r-no-reaction);  }
+
+.marquis-heroin { background: var(--r-violet-reddish); color: white; }
+.mecke-heroin { background: var(--r-yellow-green); color: white; }
+.liebermann-heroin { background: var(--r-black); color: white; }
+.mandelin-heroin { background: var(--r-dark-brown); color: white; }
+.froehde-heroin { background: var(--r-purple-red-green); color: white; }
+
+
+.marquis-ibuprofen { background: var(--r-no-reaction);  }
+.mecke-ibuprofen { background: var(--r-light-brown);  }
+.liebermann-ibuprofen { background: var(--r-red); color: white; }
+.mandelin-ibuprofen { background: var(--r-dark-brown); color: white; }
+.froehde-ibuprofen { background: var(--r-no-reaction);  }
+
+
+.marquis-ketamine { background: var(--r-no-reaction);  }
+.mecke-ketamine { background: var(--r-no-reaction);  }
+.liebermann-ketamine { background: var(--r-light-yellow); }
+.mandelin-ketamine { background: var(--r-faint-orange); }
+.froehde-ketamine { background: var(--r-no-reaction);  }
+
+
+.marquis-levamisole { background: var(--r-no-reaction);  }
+.mecke-levamisole { background: var(--r-no-reaction);  }
+.liebermann-levamisole { background: var(--r-red-orange); color: white; }
+.mandelin-levamisole { background: var(--r-green-brown); color: white; }
+.froehde-levamisole { background: var(--r-no-reaction);  }
+
+
+.marquis-liquidlsd { background: var(--r-olive-black); color: white; }
+.mecke-liquidlsd { background: var(--r-greenish-black); color: white; }
+.liebermann-liquidlsd { background: var(--r-no-reaction);  }
+.mandelin-liquidlsd { background: var(--r-red); color: white; }
+.froehde-liquidlsd { background: var(--r-yellow-green); }
+
+.marquis-mdai { background: var(--r-orange); color: white; }
+.mecke-mdai { background: var(--r-green); color: white; }
+.liebermann-mdai { background: var(--r-greenish-black); color: white; }
+.mandelin-mdai { background: var(--r-brown); color: white; }
+.froehde-mdai { background: var(--r-greenish-black); color: white; }
+
+.marquis-mda { background: var(--r-violet-to-black); color: white; }
+.mecke-mda { background: var(--r-green-blue); color: white; }
+.liebermann-mda { background: var(--r-green-to-dark-violet); color: white; }
+.mandelin-mda { background: var(--r-purple-blue-to-black); color: white; }
+.froehde-mda { background: var(--r-greenish-black); color: white; }
+
+.marquis-mdma { background: var(--r-violet-to-black); color: white; }
+.mecke-mdma { background: var(--r-green-blue); color: white; }
+.liebermann-mdma { background: var(--r-intense-brown-to-black); color: white; }
+.mandelin-mdma { background: var(--r-purple-blue-to-black); color: white; }
+.froehde-mdma { background: var(--r-black-greenish-brown); color: white; }
+
+.marquis-mdpv { background: var(--r-bright-yellow); }
+.mecke-mdpv { background: var(--r-bright-yellow); }
+.liebermann-mdpv { background: var(--r-yellow-green); }
+.mandelin-mdpv { background: var(--r-greenish-brown); color: white; }
+.froehde-mdpv { background: var(--r-bright-yellow); }
+
+.marquis-mephedrone { background: var(--r-no-reaction);  }
+.mecke-mephedrone { background: var(--r-no-reaction);  }
+.liebermann-mephedrone { background: var(--r-bright-yellow); color: black; }
+.mandelin-mephedrone { background: var(--r-no-reaction);  }
+.froehde-mephedrone { background: var(--r-no-reaction);  }
+
+.marquis-methamphetamine { background: var(--r-red-orange-to-brown); color: white; }
+.mecke-methamphetamine { background: var(--r-no-reaction);  }
+.liebermann-methamphetamine { background: var(--r-reddish-orange); color: black; }
+.mandelin-methamphetamine { background: var(--r-green-blue); color: white; }
+.froehde-methamphetamine { background: var(--r-no-reaction);  }
+
+.marquis-methoxetamine { background: var(--r-pink-slow); color: black; }
+.mecke-methoxetamine { background: var(--r-yellow-to-green-to-red); color: white; }
+.liebermann-methoxetamine { background: var(--r-orange-brown); color: white; }
+.mandelin-methoxetamine { background: var(--r-no-reaction);  }
+.froehde-methoxetamine { background: var(--r-yellow-green); }
+
+.marquis-modafinil { background: var(--r-yellow-orange-to-brown); color: white; }
+.mecke-modafinil { background: var(--r-orange-brown); color: white; }
+.liebermann-modafinil { background: var(--r-darkening-orange); color: white; }
+.mandelin-modafinil { background: var(--r-brownish-red); color: white; }
+.froehde-modafinil { background: var(--r-red-orange); color: white; }
+
+.marquis-mpa { background: var(--r-dark-brown); color: white; }
+.mecke-mpa { background: var(--r-black); color: white; }
+.liebermann-mpa { background: var(--r-dark-brown); color: white; }
+.mandelin-mpa { background: var(--r-reddish-brown); color: white; }
+.froehde-mpa { background: var(--r-light-brown); color: white; }
+
+.marquis-paracetamol { background: var(--r-no-reaction);  }
+.mecke-paracetamol { background: var(--r-no-reaction);  }
+.liebermann-paracetamol { background: var(--r-brownish-purple); color: white; }
+.mandelin-paracetamol { background: var(--r-moderate-olive); color: white; }
+.froehde-paracetamol { background: var(--r-pale-blue); }
+
+.marquis-pmma { background: var(--r-no-reaction);  }
+.mecke-pmma { background: var(--r-olive-green); color: white; }
+.liebermann-pmma { background: var(--r-purple-brown-or-orange); color: white; }
+.mandelin-pmma { background: var(--r-rust); color: white; }
+.froehde-pmma { background: var(--r-pale-green-to-red-brown); color: white; }
+
+.marquis-pma { background: var(--r-no-reaction);  }
+.mecke-pma { background: var(--r-olive-green); color: white; }
+.liebermann-pma { background: var(--r-purple-brown-or-orange); color: white; }
+.mandelin-pma { background: var(--r-rust); color: white; }
+.froehde-pma { background: var(--r-pale-green-to-red-brown); color: white; }
+
+.marquis-vitamin { background: var(--r-very-light-yellow); }
+.mecke-vitamin { background: var(--r-orange); color: white; }
+.liebermann-vitamin { background: var(--r-brown-to-purple-black); color: white; }
+.mandelin-vitamin { background: var(--r-pale-blue); }
+.froehde-vitamin { background: var(--r-pale-yellow); }
