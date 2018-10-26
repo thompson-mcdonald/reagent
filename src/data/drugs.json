@@ -59,7 +59,7 @@
         "marquis": "no reaction",
         "liebermann": "yellow orange",
         "froehde": "no reaction",
-        "mandelin": "slight darkening",
+        "mandelin": "very slight darkening",
         "mecke": "no reaction"
         }
     },
@@ -129,7 +129,7 @@
     "mdma": {
       "reactions": {
         "marquis": "blue violet black",
-        "liebermann": "brown black",
+        "liebermann": "intense brown to black",
         "froehde": "black green brown",
         "mandelin": "purple black blue",
         "mecke": "green blue"
@@ -201,7 +201,7 @@
     "pmma": {
       "reactions": {
         "marquis": "no reaction",
-        "liebermann": "purple brown orange",
+        "liebermann": "purple, brown  or orange",
         "froehde": "pale green red brown",
         "mandelin": "rust",
         "mecke": "olive green"
@@ -210,7 +210,7 @@
     "pma": {
       "reactions": {
         "marquis": "no reaction",
-        "liebermann": "purple brown orange",
+        "liebermann": "purple, brown  or orange",
         "froehde": "pale green red brown",
         "mandelin": "rust",
         "mecke": "olive green"
