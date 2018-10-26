@@ -37,6 +37,7 @@ const Checkbox = styled.input.attrs({
    width: 18px;
    height: 18px;
    border-radius: 200%;
+   outline: none;
  }
  &:checked:before {
    content: '';

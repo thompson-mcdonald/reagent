@@ -14,6 +14,9 @@ const Reaction = styled.div`
   display: inline-block;
   background-color: #eee;
   padding: 20px;
+  & div {
+    margin-top: 10px;
+  }
 }`
 
 const DrugHeader = styled.h2`

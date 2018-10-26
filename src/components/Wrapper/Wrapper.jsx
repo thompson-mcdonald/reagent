@@ -4,6 +4,7 @@ export default styled.main`
   background-color: var(--color-white);
   width: 90%;
   max-width: 850px;
-  margin: 0 auto;
+  margin: 0 auto 4rem;
   padding: 1rem;
+
 `;
