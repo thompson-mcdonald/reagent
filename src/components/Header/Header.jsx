@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Header = styled.header`
+  height: 120px;
   background: var(--color-light-grey);
-  padding-top: 3rem;
+  @media screen and (min-width: 750px) {
+    padding-top: 18px;
+  }
 `;
 
 const Brand = styled.a`
@@ -19,15 +22,20 @@ const HeaderContainer = styled.div`
   width: 90%;
   max-width: 850px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 1rem;
   position: relative;
 `;
 
 const Navigation = styled.div`
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 40px;
+  left: 0;
   padding: 2rem 0;
+  @media screen and (min-width: 750px) {
+    right: 0;
+    left: auto;
+    top: 0;
+  }
 `;
 
 const NavLink = styled.a`

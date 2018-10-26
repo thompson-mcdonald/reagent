@@ -23,18 +23,21 @@ const Qwrapper = styled.div`
 const Question = styled.h2`
   margin-bottom: 2rem;
   margin-top: 1rem;
+  font-size: 20px;
+
 `;
 
 const ReagentOptions = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
+  grid-gap: 10px;
+
 `;
 
 const Selector = styled(Select)`
-  font-size: 20px;
-  &.Select--multi {
-    padding: 20px;
+  font-size: 14px;
+  @media screen and (min-width: 750px) {
+    font-size: 20px;
   }
 `;
 

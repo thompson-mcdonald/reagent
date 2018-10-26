@@ -5,5 +5,5 @@ export default styled.main`
   width: 90%;
   max-width: 850px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
 `;
