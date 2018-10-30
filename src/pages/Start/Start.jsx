@@ -1,35 +1,55 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
 import Button from "../../components/Button/Button";
+import Title from "../../components/Title/Title";
+import illo from './images/illustration.png';
 
 const Blurb = styled.div`
   margin-bottom: 70px;
-  width: 80%;
-  font-size: 16px;
+  font-size: 12px;
+  font-weight: lighter;
+  letter-spacing: -0.025em;
+  & a:link, a:visited {
+    color: var(--color-blue);
+    text-decoration: underline;
+  }
+`;
+
+const Wrap = styled.div`
+
+`;
+
+const Illustration = styled.img`
+  max-width: 100%;
+  margin-bottom: 2rem;
 `;
 
 export default () => (
   <Fragment>
-    <Blurb>
-      <h1>Welcome</h1>
+    <Wrap>
+      <Blurb>
+          <Illustration src={illo} />
+          <Title>01. WHAT IS THIS?</Title>
 
-      <p>We do not recommend anybody take illegal substances.</p>
+          <p>Gabi’s Reagent Companion aims to inform drug users of best practices when being mindful of what you ingest. You tell it what compounds you’re testing and what you’re testing for; and it’ll tell you what to look out for when you’re testing. </p>
 
-      <p>
-        If you are going to anyway; at least ensure you know what you’re taking.
-        This service requires you have your reagents already, learn all about
-        reagents here
-      </p>
+          <p>
+            This service requires you have your reagents already, learn all about
+            reagents <a target="_blank" href="https://www.reagent-tests.uk/reagent-test-colours/">here</a>
+          </p>
 
-      <p>
-        This isn’t a catch-all solution for taking drugs safely; reagent tests
-        only test a small amount of the drug you’re consuming; know your doses
-        and protect yourself
-      </p>
-    </Blurb>
+          <p>
+            This isn’t a catch-all solution for taking drugs safely. Reagent tests
+            only test a small amount of the drug you’re consuming. Know your doses
+            and protect yourself
+          </p>
 
-    <Button theme="cta" to="/form">
-      OK, let's go!
-    </Button>
+          <p>We do not recommend anybody take illegal substances.</p>
+        </Blurb>
+
+        <Button theme="cta" to="/How">
+          How does reagent testing work?
+        </Button>
+      </Wrap>
   </Fragment>
 );

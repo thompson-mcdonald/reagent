@@ -18,38 +18,53 @@ export default ({ to, theme, ...rest }) => {
   }
 
   const Component = styled(component)`
-    color: var(--color-white);
-    font-size: 20px;
+    color: black;
+    font-size: 14px;
 
     display: flex;
     align-items: center;
 
-    width: 70%;
-    height: 80px;
-    padding-left: 25px;
-
+    width: 90%;
+    height: 60px;
+    padding-left: 1rem;
+    position: relative;
     transition: 0.2s ease all;
+    text-transform: uppercase;
 
-    background-color: var(--color-blue);
-    border-radius: 5px;
-    clip-path: polygon(
-      0% 0%,
-      calc(100% - 50px) 0%,
-      100% 50%,
-      calc(100% - 50px) 100%,
-      0% 100%
-    );
+    background-color: var(--color-light-yellow);
+    border: 1px solid black;
+    border-right: 0;
+    z-index: 0;
 
     &:link,
     &:visited {
-      color: var(--color-white);
+      color: black;
       text-decoration: none;
     }
 
     &:hover {
-      background-color: var(--color-dark);
+      background-color: #E5E25D;
       transform: translateX(10px);
       cursor: pointer;
+    }
+
+    &:hover:before {
+      background-color: #E5E25D;
+      transition: 0.2s ease all;
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      z-index: 2;
+      height: 41px;
+      width: 41px;
+      right: -36px;
+      top: 3px;
+      background-color: var(--color-light-yellow);
+      transition: 0.2s ease all;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+      transform: rotate(-45deg) translate(-14px,-7px);
     }
   `;
 

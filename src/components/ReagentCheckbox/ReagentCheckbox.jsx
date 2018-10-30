@@ -3,18 +3,22 @@ import styled from "styled-components";
 
 const Option = styled.label`
   padding: 15px 20px;
+  height: 45px;
   display: flex;
   border: 1px solid #eee;
-  border-radius: 5px;
   align-items: center;
-  text-align: right;
-  text-transform: capitalize;
-  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid black;
+  font-size: 12px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
   &:hover {
     cursor: pointer;
   }
   @media screen and (min-width: 750px) {
-    font-size: 20px;
+    font-size: 14px;
     padding: 25px 30px;
   }
 `;
@@ -26,41 +30,46 @@ const Checkbox = styled.input.attrs({
   background: var(--color-light-grey);
   margin-left: auto;
   -webkit-appearance: none;
-  border-radius: 50%;
+  border: 0;
   cursor: pointer;
-
+  background: transparent;
   &:before {
    content: '';
    display: inline-block;
    vertical-align: middle;
    background: #eee;
-   width: 18px;
-   height: 18px;
-   border-radius: 200%;
+   width: 100vw;
+   height: 200px;
    outline: none;
- }
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: -1;
+   transition: background .2s;
+  }
  &:checked:before {
    content: '';
    display: inline-block;
    vertical-align: text-top;
-   background: #86D095;
-   border-radius: 200%;
+   background: #888;
+   width: 100vw;
+   height: 200px;
+   border: 0;
+   transition: background .2s;
+ }
+ &:checked {
+   border: 0;
+   background: transparent;
+   transition: background .2s;
  }
  &:disabled:before {
    background: white;
-   border: 3px solid #ECF0F2;
    color: #eee;
  }
  &:focus {
    outline: none;
  }
- @media screen and (min-width: 750px) {
 
-     &:before {
-      width: 30px;
-      height: 30px;
-    }
- }
 `;
 
 export default ({ reagent, handleChange }) => (

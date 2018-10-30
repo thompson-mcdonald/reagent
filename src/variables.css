@@ -1,12 +1,13 @@
 :root {
   --color-yellow: #F7D532;
   --color-light-yellow: #FAFF90;
+  --color-light-red: #FFBDBD;
   --color-white: #FFF;
   --color-dark: #160D2A;
   --color-cta: #492991;
   --color-light-grey: #ECF0F2;
   --color-green: #86D095;
-  --color-blue: #3E71F4;
+  --color-blue: #4C6EFF;
 
   --r-yellow: #F2F001;
   --r-yellow-to-green: linear-gradient(to right, yellow, green);

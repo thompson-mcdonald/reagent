@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import DrugReactions from "../../components/DrugReactions/DrugReactions";
 import data from "../../data/drugs.json";
+import Title from "../../components/Title/Title";
 
 class Results extends Component {
   constructor(props) {
@@ -35,7 +36,7 @@ class Results extends Component {
 
     return (
       <div>
-        <h1>Ok here&apos;s what to look for:</h1>
+        <Title>Ok here&apos;s what to look for:</Title>
         {Object.keys(drugs).map(drug => (
           <DrugReactions
             drug={drug}
