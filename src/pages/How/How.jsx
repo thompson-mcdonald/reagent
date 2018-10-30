@@ -10,7 +10,7 @@ const Blurb = styled.div`
   font-weight: lighter;
   letter-spacing: -0.025em;
   @media screen and (min-width:740px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 `;
 
