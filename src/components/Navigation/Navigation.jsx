@@ -59,7 +59,7 @@ const NavButton = styled(Link) `
   }
 `;
 
-const LetsTest = styled.a`
+const LetsTest = styled(Link)`
   color: black;
   font-size: 14px;
   display: flex;
@@ -80,7 +80,7 @@ const LetsTest = styled.a`
     background-color: #E5E25D;
     transition: 0.2s ease all;
   }
-  &:before{
+  &:before {
     content: '';
     position: absolute;
     z-index: 2;
@@ -96,6 +96,7 @@ const LetsTest = styled.a`
   }
   &:hover {
       background: #E5E25D;
+      transition: 0.2s ease all;
   }
   @media screen and (min-width: 750px) {
     margin-left: 3rem;
@@ -150,7 +151,7 @@ class Navigation extends Component {
                 <NavLinks>
                   <NavButton to="/"> 01. What is this? </NavButton>
                   <NavButton to="/How"> 02. How Do Reagent Tests Work? </NavButton>
-                  <LetsTest theme="cta" href="/Form"> Let's Test </LetsTest>
+                  <LetsTest theme="cta" to="/Form"> Let's Test </LetsTest>
                 </NavLinks>
               </NavMenu>
             )
