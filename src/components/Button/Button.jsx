@@ -19,12 +19,12 @@ export default ({ to, theme, ...rest }) => {
 
   const Component = styled(component)`
     color: black;
-    font-size: 14px;
+    font-size: 12px;
 
     display: flex;
     align-items: center;
 
-    width: 90%;
+    width: 40%;
     height: 60px;
     padding-left: 1rem;
     position: relative;

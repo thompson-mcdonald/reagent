@@ -17,7 +17,7 @@ const Warning = styled.div`
 
 export default () => (
   <Warning>
-      It is much better to use more than 2 testing kit on samples from the same source. If you can get a positive ID with 3 test kits, you’re thrice as sure.
+      It is much better to use more than 2 reagents on samples from the same source. If you can get a positive ID with 3 reagents, you’re thrice as sure.
 
       It’s worth doing.
   </Warning>

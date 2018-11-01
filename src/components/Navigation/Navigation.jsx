@@ -29,7 +29,7 @@ const NavLinks = styled.div`
   background: #FFEAFE;
   width: 100%;
   max-width: 798px;
-  height: 200px;
+  height: 220px;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
   padding: 1rem;
@@ -40,7 +40,7 @@ const NavLinks = styled.div`
     padding: 0.5rem 0;
   }
   @media screen and (min-width: 750px) {
-    height: 230px;
+    height: 300px;
   }
 `;
 
@@ -151,6 +151,7 @@ class Navigation extends Component {
                 <NavLinks>
                   <NavButton to="/"> 01. What is this? </NavButton>
                   <NavButton to="/How"> 02. How Do Reagent Tests Work? </NavButton>
+                  <NavButton to="/fentanyl">03. Testing for Fentanyl</NavButton>
                   <LetsTest theme="cta" to="/Form"> Let's Test </LetsTest>
                 </NavLinks>
               </NavMenu>

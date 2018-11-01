@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Wrapper from "./components/Wrapper/Wrapper";
 import Start from "./pages/Start/Start";
 import Form from "./pages/Form/Form";
+import Fentanyl from "./pages/Fentanyl/Fentanyl";
 import How from "./pages/How/How";
 import Results from "./pages/Results/Results";
 import "./variables.css";
@@ -18,6 +19,7 @@ export default () => (
       <Wrapper>
         <Switch>
           <Route exact path="/" component={Start} />
+          <Route path="/fentanyl" component={Fentanyl} />
           <Route path="/form" component={Form} />
           <Route path="/how" component={How} />
           <Route path="/results/d/:drugs/r/:reagents" component={Results} />

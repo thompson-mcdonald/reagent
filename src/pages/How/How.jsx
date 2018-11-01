@@ -19,14 +19,13 @@ class How extends Component {
     return (
       <div>
       <Blurb>
-        <Title>How</Title>
+        <Title>02. How does reagent testing work?</Title>
         <p>Reagent Testing works by dropping a small quantity of a reagent chemical on a sample of drug matter.</p>
 
         <p>To do this you need the following:</p>
 
         <ul>
           <li>Gloves</li>
-          <li>Goggles</li>
           <li>A Ceramic Surface (A small plate)</li>
           <li>Access to a water source</li>
           <li>A Minimum of 2 Reagent Chemicals</li>

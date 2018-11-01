@@ -3,6 +3,7 @@ import Select from "react-select";
 import styled from "styled-components";
 import ReagentCheckbox from "../../components/ReagentCheckbox/ReagentCheckbox";
 import Button from "../../components/Button/Button";
+import Title from "../../components/Title/Title";
 import Warning from "../../components/Warning/Warning";
 import InfoLink from "../../components/InfoLink/InfoLink";
 import data from "../../data/drugs.json";
@@ -117,34 +118,37 @@ class Form extends Component {
     const { reagents, reagentsWarning } = this.state;
 
     return (
-      <FormWrap onSubmit={this.handleSubmit}>
-        <FormLabel>
-          <Question>Start by entering what you&apos;re going to test:</Question>
-          <Selector
-            options={selectOptions}
-            onChange={this.handleChange}
-            isMulti
-          />
-        </FormLabel>
+      <div>
+        <Title>Ok, Let's Test</Title>
+        <FormWrap onSubmit={this.handleSubmit}>
+          <FormLabel>
+            <Question>Start by entering what you&apos;re going to test:</Question>
+            <Selector
+              options={selectOptions}
+              onChange={this.handleChange}
+              isMulti
+            />
+          </FormLabel>
 
-        <Qwrapper>
-          <Question>Select some testing kits:</Question>
-          { this.state.showWarning ? <Warning /> : null }
-          <ReagentOptions>
-            {Object.keys(reagents).map(reagent => (
-              <ReagentCheckbox
-                reagent={reagent}
-                handleChange={this.handleChange}
-              />
-            ))}
-          </ReagentOptions>
-          <InfoLink />
-        </Qwrapper>
+          <Qwrapper>
+            <Question>Select some testing kits:</Question>
+            { this.state.showWarning ? <Warning /> : null }
+            <ReagentOptions>
+              {Object.keys(reagents).map(reagent => (
+                <ReagentCheckbox
+                  reagent={reagent}
+                  handleChange={this.handleChange}
+                />
+              ))}
+            </ReagentOptions>
+            <InfoLink />
+          </Qwrapper>
 
-        <Button theme="cta" type="submit">
-          Get Results
-        </Button>
-      </FormWrap>
+          <Button theme="cta" type="submit">
+            Get Results
+          </Button>
+        </FormWrap>
+      </div>
     );
   }
 }
